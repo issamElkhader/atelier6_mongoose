@@ -1,0 +1,20 @@
+get http://localhost:3000/actors/all
+###
+get http://localhost:3000/actors/movies
+###
+get http://localhost:3000/actors/names
+###
+post http://localhost:3000/actors/add
+content-type: application/json
+
+{
+    "name" :"Issam" ,
+    "birthname" : "Adam Richard Sandler" ,
+    "birthdate" : "1966-09-09" ,
+    "birthplace" : "New York, United States"
+}
+###
+PUT http://localhost:3000/actors/update:Issam
+
+###
+delete http://localhost:3000/actors/delete:Issam
