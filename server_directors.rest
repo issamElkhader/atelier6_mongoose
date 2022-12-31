@@ -1,0 +1,23 @@
+get http://localhost:3000/directors/all
+
+###
+get http://localhost:3000/directors/names
+###
+get http://localhost:3000/directors/movies
+
+###
+post http://localhost:3000/directors/add
+Content-Type: application/json
+
+{
+    "name" : "Issam Elkhader" ,
+    "birthname" : "" ,
+    "birthdate" : "2004-02-11" ,
+    "birthplace" : "M'diq"
+}
+
+###
+put http://localhost:3000/directors/update:Issam_Elkhader
+
+###
+delete http://localhost:3000/directors/delete:Issam_Elkhader

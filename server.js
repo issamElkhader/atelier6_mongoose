@@ -19,8 +19,10 @@ const actorsRoute = require("./routes/actor")
 const moviesRoute = require("./routes/movie")
 const directorsRoute = require("./routes/director")
 app.use("/actors" ,actorsRoute)
-// app.use("/movies" , moviesRoute)
-// app.use("/directors" , directorsRoute)
+app.use("/movies" , moviesRoute)
+app.use("/directors" , directorsRoute)
+
+
 
 
 //

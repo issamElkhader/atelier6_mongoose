@@ -1,0 +1,13 @@
+get http://localhost:3000/movies/all
+
+###
+get http://localhost:3000/movies/actors:2_Fast_2_Furious
+
+###
+get  http://localhost:3000/movies/directors:2_Fast_2_Furious
+
+###
+get  http://localhost:3000/movies/listCategorie/:action
+
+###
+get http://localhost:3000/movies/:2004/:2005

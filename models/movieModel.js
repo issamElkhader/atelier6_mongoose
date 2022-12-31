@@ -21,10 +21,10 @@ const movieShema = mongoose.Schema({
         type : String
     },
     writer: {
-        type : String
+        type : [String]
     },
     actors: {
-        type : String
+        type : [String]
     },
     storyline: {
         type : String
